@@ -1,10 +1,10 @@
-package com.rama.app;
+package com.rakesh.app;
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
