@@ -1,18 +1,14 @@
 package com.rakesh.app;
 
-public class Greeting{
+public class Greeting {
 
-    public String SayWelcome(){
-        return "welcome to greeting";
+    public String sayHello(){
+        return "Hello from greeting";
     }
-
-    public String SayHello(){
-        return "hello from greeting";
+    public String sayWelcome(){
+        return "Welcome from greeting";
     }
-
-    public String SayBye(){
-        return "bye from greeting";
+    public String sayBye(){
+        return "Bye from greeting";
     }
-
-
 }

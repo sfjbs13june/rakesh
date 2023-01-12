@@ -1,13 +1,15 @@
 package com.rakesh.app;
 
-/**
- * Hello world!
- *
- */
 public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Greeting greeting=new Greeting();
+        String hello=greeting.sayHello();
+        System.out.println(hello);
+        String welcome=greeting.sayWelcome();
+        System.out.println(welcome);
+        String bye=greeting.sayBye();
+        System.out.println(bye);
     }
 }
