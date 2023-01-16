@@ -17,5 +17,5 @@ mvn spring-boot:run
 
 5 Performing unit testing by creating test cases in HelloControllerTest.java
 
-6 Performing integration testing by creating test cases in HelloControllerIntegrationTest.java
+6 Performing integration testingg by creating test cases in HelloControllerIntegrationTest.java
 
