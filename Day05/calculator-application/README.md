@@ -35,7 +35,7 @@ curl --location --request DELETE 'localhost:8080/div?a=35&b=7'
 
 ### **#Coverage**
 
-#Run All Tests with Coverage(Right click on project)
+#Run All Tests with Coverage(Right click on project to view this option)
 
 #Output of the Coverage is:
 ```agsl
