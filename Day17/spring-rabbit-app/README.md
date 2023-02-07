@@ -23,5 +23,7 @@ password:guest
 
 
 ## Stop Container
-
+```agsl
 docker-compose -f docker-compose-rabbitmq.yml down
+```
+v
