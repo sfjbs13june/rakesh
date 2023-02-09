@@ -13,10 +13,10 @@ import java.util.List;
 public class DoctorController {
     @Autowired
     AppointmentRepository appointmentRepository;
-    @GetMapping("/docter-appointment")
+    @GetMapping("/doctor-appointment")
     public List<Appointment> getAppointments(@RequestParam String doctorName)
     {
-        return appointmentRepository.findByDocterName(doctorName);
+        return appointmentRepository.findByDoctorName(doctorName);
     }
     @PostMapping("/save")
     public Appointment saveAppointment(@RequestBody Appointment appointment)
