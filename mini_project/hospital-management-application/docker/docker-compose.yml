@@ -3,7 +3,7 @@ services:
   mongo-app:
     image: rakeshuppala/hospital-management-application:0.0.1-SNAPSHOT
     ports:
-      - "8083:8083"
+      - "8080:8080"
     environment:
       spring.data.mongodb.url: mongodb://mongo:27017/data
     depends_on:
