@@ -37,7 +37,7 @@ docker-compose down
 curl --location --request GET 'localhost:8080/doctor/doctor-appointment?doctorName=pavan' \
 --header 'Authorization: Basic ZG9jdG9yOmRvY3Rvcg==' \
 --header 'Cookie: JSESSIONID=96A89FBBE914F890798E9CC99B9695D5' \
---data-raw ''
+
 
 
 
@@ -67,7 +67,7 @@ curl --location --request POST 'localhost:8080/doctor/save' \
 curl --location --request GET 'localhost:8080/patient/myappointment?patientName=rakesh' \
 --header 'Authorization: Basic cGF0aWVudDpwYXRpZW50' \
 --header 'Cookie: JSESSIONID=96A89FBBE914F890798E9CC99B9695D5' \
---data-raw ''
+
 
 
 
@@ -98,7 +98,7 @@ curl --location --request POST 'localhost:8080/patient/save' \
 curl --location --request GET 'localhost:8080/patient/myappointment?patientName=rakesh' \
 --header 'Authorization: Basic cGF0aWVudDpwYXRpZW50' \
 --header 'Cookie: JSESSIONID=96A89FBBE914F890798E9CC99B9695D5' \
---data-raw ''
+
 
 
 

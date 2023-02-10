@@ -49,4 +49,23 @@ public class PrescriptionControllerTest {
         Prescription result = prescriptionController.savePrescription(prescription);
         assertEquals(pre1,result);
     }
+    @Test
+    public  void Test3()
+    {
+    List<Prescription> prescriptions= new ArrayList();
+    Prescription prescription1=new Prescription();
+        prescription1.setPrescriptionId("67");
+        prescription1.setDescription("cough");
+        prescription1.setDoctorName("abc");
+        prescription1.setPatientName("xyz");
+        prescription1.setAppointmentId("123");
+        prescriptions.add(prescription1);
+    when(prescriptionRepository.findByPatientName(anyString())).thenReturn(prescriptions);
+    List<Prescription> result=prescriptionController.getAllPrescriptions("xyz");
+    assertEquals(prescriptions.get(0).getPrescriptionId(),result.get(0).getPrescriptionId());
+    assertEquals(prescriptions.get(0).getAppointmentId(),result.get(0).getAppointmentId());
+    assertEquals(prescriptions.get(0).getDescription(),result.get(0).getDescription());
+    assertEquals(prescriptions.get(0).getDoctorName(),result.get(0).getDoctorName());
+    assertEquals(prescriptions.get(0).getPatientName(),result.get(0).getPatientName());
+}
 }
